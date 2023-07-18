@@ -1,0 +1,15 @@
+---
+import LayoutInicio from "../layouts/LayoutInicio.astro"
+import { historialLaboral } from "../data/historialLaboral.json"
+import CardLaboral from "../components/CardLaboral.astro"
+import Titulos from "../components/Titulos.astro"
+---
+
+<LayoutInicio title="Experiencia Laboral">
+  <section class="flex flex-col gap-4 mx-auto my-12">
+    <header class="flex justify-between align-middle">
+      <Titulos>Experiencia Laboral</Titulos>
+    </header>
+    {historialLaboral.map((lab) => <CardLaboral lab={lab} />)}
+  </section>
+</LayoutInicio>
