@@ -2,19 +2,22 @@
 import LayoutInicio from "../layouts/LayoutInicio.astro"
 import { historialLaboral } from "../data/historialLaboral.json"
 import CardLaboral from "../components/CardLaboral.astro"
-import Botton from "../components/Botton.astro"
+import Button from "../components/Button.astro"
 import Titulos from "../components/Titulos.astro"
 import Hero from "../components/Hero.astro"
+
 // export const title = "Inicio"
+// x8mldmn
 ---
 
 <LayoutInicio title="Portfolio">
   <Hero />
+  <section></section>
   <section class="flex flex-col gap-4 mx-auto my-12">
     <header class="flex justify-between align-middle items-start">
       <Titulos>Experiencia Laboral</Titulos>
     </header>
     {historialLaboral.map((lab) => <CardLaboral lab={lab} />).splice(0, 2)}
-    <Botton href="experiencia-laboral" arrow>Ver más</Botton>
+    <Button href="experiencia-laboral" arrow>Ver más</Button>
   </section>
 </LayoutInicio>
