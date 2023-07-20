@@ -1,5 +1,7 @@
 ---
 const pathname = new URL(Astro.request.url).pathname
+const currentPath = pathname.slice(1)
+console.log(currentPath)
 const links = [
   {
     title: "Inicio",
@@ -7,11 +9,11 @@ const links = [
   },
   {
     title: "Proyectos",
-    link: "/proyectos",
+    link: "proyectos",
   },
   {
     title: "Experiencia",
-    link: "/experiencia-laboral",
+    link: "experiencia-laboral",
   },
 ]
 ---
@@ -22,7 +24,7 @@ const links = [
       links.map(({ link, title }) => (
         <li
           class={
-            pathname === link
+            currentPath === link
               ? "text-cyan-300"
               : "hover:text-cyan-300 transition duration-300"
           }
