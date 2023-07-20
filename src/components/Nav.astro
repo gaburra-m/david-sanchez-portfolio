@@ -11,13 +11,13 @@ const pathname = Astro.url.pathname
       href="/">Inicio</a
     >
     <a
-      class={pathname === "/proyectos"
+      class={pathname.includes("proyectos")
         ? "text-cyan-300"
         : "hover:text-cyan-300 transition duration-300"}
       href="/proyectos">Proyectos</a
     >
     <a
-      class={pathname === "/experiencia-laboral"
+      class={pathname.includes("experiencia-laboral")
         ? "text-cyan-300"
         : "hover:text-cyan-300 transition duration-300"}
       href="/experiencia-laboral">Experiencia</a
