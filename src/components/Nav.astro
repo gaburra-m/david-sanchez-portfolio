@@ -1,24 +1,23 @@
 ---
 const pathname = Astro.url.pathname
-const currentPath = pathname.slice(1)
 ---
 
 <nav>
   <ul class="flex gap-4">
     <a
-      class={currentPath === ""
+      class={pathname === "/"
         ? "text-cyan-300"
         : "hover:text-cyan-300 transition duration-300"}
       href="/">Inicio</a
     >
     <a
-      class={currentPath === "proyectos"
+      class={pathname === "/proyectos"
         ? "text-cyan-300"
         : "hover:text-cyan-300 transition duration-300"}
       href="/proyectos">Proyectos</a
     >
     <a
-      class={currentPath === "experiencia-laboral"
+      class={pathname === "/experiencia-laboral"
         ? "text-cyan-300"
         : "hover:text-cyan-300 transition duration-300"}
       href="/experiencia-laboral">Experiencia</a
