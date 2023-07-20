@@ -5,6 +5,7 @@ import CardLaboral from "../components/CardLaboral.astro"
 import Button from "../components/Button.astro"
 import Titulos from "../components/Titulos.astro"
 import Hero from "../components/Hero.astro"
+import { Video } from "../components/Video"
 
 // export const title = "Inicio"
 // x8mldmn
@@ -12,7 +13,7 @@ import Hero from "../components/Hero.astro"
 
 <LayoutInicio title="Portfolio">
   <Hero />
-  <section></section>
+  <Video client:load />
   <section class="flex flex-col gap-4 mx-auto my-12">
     <header class="flex justify-between align-middle items-start">
       <Titulos>Experiencia Laboral</Titulos>
