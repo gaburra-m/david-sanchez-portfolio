@@ -6,7 +6,7 @@ export const Video = () => {
     setOpen(!open)
   }
   return (
-    <section className="flex flex-col gap-3 items-center justify-center my-[100px] border border-slate-800 rounded-md p-8  bg-cover bg-center bg-opacity-50">
+    <section className="flex flex-col gap-3 items-center justify-center my-[100px] border border-slate-800 rounded-md p-8  bg-cover bg-center bg-opacity-50 transition-colors duration-200 hover:bg-slate-900 shadow-md shadow-slate-900">
       <p className="mb-4 text-sm md:text-lg text-cyan-100">
         Aquí puedes ver un resumen en video de mi trabajo.
       </p>

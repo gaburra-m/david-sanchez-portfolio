@@ -4,23 +4,29 @@ const pathname = Astro.url.pathname
 
 <nav>
   <ul class="flex gap-4">
-    <a
-      class={pathname === "/"
-        ? "text-cyan-300"
-        : "hover:text-cyan-300 transition duration-300"}
-      href="/">Inicio</a
-    >
-    <a
-      class={pathname.includes("proyectos")
-        ? "text-cyan-300"
-        : "hover:text-cyan-300 transition duration-300"}
-      href="/proyectos">Proyectos</a
-    >
-    <a
-      class={pathname.includes("experiencia-laboral")
-        ? "text-cyan-300"
-        : "hover:text-cyan-300 transition duration-300"}
-      href="/experiencia-laboral">Experiencia</a
-    >
+    <li>
+      <a
+        class={pathname === "/"
+          ? "text-cyan-300"
+          : "hover:text-cyan-300 transition duration-300"}
+        href="/">Inicio</a
+      >
+    </li>
+    <li>
+      <a
+        class={pathname.includes("proyectos")
+          ? "text-cyan-300"
+          : "hover:text-cyan-300 transition duration-300"}
+        href="/proyectos">Proyectos</a
+      >
+    </li>
+    <li>
+      <a
+        class={pathname.includes("experiencia-laboral")
+          ? "text-cyan-300"
+          : "hover:text-cyan-300 transition duration-300"}
+        href="/experiencia-laboral">Experiencia</a
+      >
+    </li>
   </ul>
 </nav>
